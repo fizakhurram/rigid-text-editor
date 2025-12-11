@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <h1>RIGID TEXT EDITOR</h1>
+    <div class="main">
+        <div class="top">
+            <div class="first-top">
+                <i class="fa-solid fa-bold" onclick="makeBold()"></i>
+                <i class="fa-solid fa-italic" onclick="makeItalic()"></i>
+                <i class="fa-solid fa-underline" onclick="makeUnderline()"></i>
+                <i class="fa-solid fa-a" ></i>
+                <input type="color" onchange="textColor()" id="color">
+                <i class="fa-solid fa-fill"></i>
+                <input type="color" onchange="backgroundcolor()" id="background">
+                <i class="fa-solid fa-align-left" onclick="textleft()"></i>
+                <i class="fa-solid fa-align-right" onclick="textright()"></i>
+                <i class="fa-solid fa-align-justify" onclick="textcenter()"></i>
+                <i class="fa-solid fa-list-ol" onclick="makeOrderedList()"></i>
+                <i class="fa-solid fa-list" onclick="makeUnorderedList()"></i>
+
+            </div>
+            <div class="second-top">
+                <i class="fa-solid fa-eraser" onmousemove="eraser()"></i>
+                <i class="fa-solid fa-scissors"></i>
+                <i class="fa-solid fa-copy"></i>
+            </div>
+        </div>
+
+        <div class="for-text">
+            <div id="my-input" contenteditable="true"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
