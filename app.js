@@ -12,17 +12,17 @@ function textColor() {
     var textcolor = document.getElementById("color").value;
     myInput.style.color = textcolor;
 }
-function backgroundcolor(){
+function backgroundcolor() {
     var backgroundcolor = document.getElementById("background").value;
-    myInput.style.backgroundColor = backgroundcolor ;
+    myInput.style.backgroundColor = backgroundcolor;
 }
-function textleft(){
+function textleft() {
     myInput.classList.toggle("textleft")
 }
-function textright(){
+function textright() {
     myInput.classList.toggle("textright")
 }
-function textcenter(){
+function textcenter() {
     myInput.classList.toggle("textcenter")
 }
 var myInput = document.getElementById("my-input");
@@ -30,11 +30,11 @@ var myInput = document.getElementById("my-input");
 function makeOrderedList() {
     // Get the text and split by line breaks
     var lines = myInput.innerText.split('\n');
-    
+
     // Start building the ordered list
     var html = '<ol>';
     lines.forEach(line => {
-        if(line.trim() !== '') { // skip empty lines
+        if (line.trim() !== '') { // skip empty lines
             html += `<li>${line}</li>`;
         }
     });
@@ -48,10 +48,22 @@ function makeUnorderedList() {
     var lines = myInput.innerText.split('\n');
     var html = '<ul>';
     lines.forEach(line => {
-        if(line.trim() !== '') {
+        if (line.trim() !== '') {
             html += `<li>${line}</li>`;
         }
     });
     html += '</ul>';
     myInput.innerHTML = html;
+}
+function eraser() {
+    myInput.innerHTML = " "
+}
+var fontSize = 16;
+function fontIncrease() {
+    fontSize += 2;
+    myInput.style.fontSize = fontSize + "px"
+}
+function fontDecrease(){
+    fontSize-= 2
+    myInput.style.fontSize = fontSize + "px"
 }

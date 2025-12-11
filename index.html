@@ -20,7 +20,7 @@
                 <i class="fa-solid fa-bold" onclick="makeBold()"></i>
                 <i class="fa-solid fa-italic" onclick="makeItalic()"></i>
                 <i class="fa-solid fa-underline" onclick="makeUnderline()"></i>
-                <i class="fa-solid fa-a" ></i>
+                <i class="fa-solid fa-a"></i>
                 <input type="color" onchange="textColor()" id="color">
                 <i class="fa-solid fa-fill"></i>
                 <input type="color" onchange="backgroundcolor()" id="background">
@@ -32,9 +32,11 @@
 
             </div>
             <div class="second-top">
-                <i class="fa-solid fa-eraser" onmousemove="eraser()"></i>
-                <i class="fa-solid fa-scissors"></i>
-                <i class="fa-solid fa-copy"></i>
+                <i class="fa-solid fa-eraser" onclick="eraser()"></i>
+                <!-- <i class="fa-solid fa-scissors"></i>
+                <i class="fa-solid fa-copy"></i> -->
+                <span><b>FontSize:</b>(<i class="fa-solid fa-plus" onclick="fontIncrease()"></i>, <i
+                        class="fa-solid fa-minus" onclick="fontDecrease()"></i>)</span>
             </div>
         </div>
 
